@@ -8,6 +8,8 @@ services:
       POSTGRES_USER: ${POSTGRESQL_USER}
       POSTGRES_PASSWORD: ${POSTGRESQL_PASS}
       POSTGRES_DB: ${POSTGRESQL_DB}
+    volumes:
+      - ./keycloak/db:/var/lib/postgresql/data
     healthcheck:
       test: pg_isready -d postgres
       interval: 10s
@@ -39,7 +41,6 @@ services:
         source: ./keycloak/import/realm-export.json
         target: /opt/keycloak/data/import/realm-export.json
         read_only: true
-      - realm-export.json
     ports:
       - 8282:8080
     depends_on:
