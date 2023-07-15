@@ -1,12 +1,9 @@
 package com.example.therepaintinggameweb;
 
-import com.example.therepaintinggameweb.dtos.responses.CellResponseDTO;
 import com.example.therepaintinggameweb.dtos.responses.ErrorResponseDTO;
-import com.example.therepaintinggameweb.dtos.responses.GameStartResponseDTO;
 import com.example.therepaintinggameweb.exceptions.AppException;
 import com.example.therepaintinggameweb.logic.GameWrapper;
 import com.example.therepaintinggameweb.logic.GameWrapperFactory;
-import com.google.gson.Gson;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeMap;
 import org.python.util.PythonInterpreter;
@@ -43,11 +40,6 @@ public class TheRepaintingGameWebApplication {
         });
 
         return modelMapper;
-    }
-
-    @Bean
-    public Gson gson() {
-        return new Gson();
     }
 
     @Bean
