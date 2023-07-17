@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="add keycloak db volume">
+      <change afterPath="$PROJECT_DIR$/KeycloakProvider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repainting__API" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repainting__API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/TheRepaintingGameWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/TheRepaintingGameWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/user/DnlkkProjects/TheRepaintingGameWeb2",
+    "last_opened_file_path": "C:/Users/user/DnlkkProjects/TheRepaintingGameWeb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,7 +58,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689406345539</updated>
-      <workItem from="1689406346554" duration="14248000" />
+      <workItem from="1689406346554" duration="14557000" />
+      <workItem from="1689506669602" duration="2409000" />
+      <workItem from="1689588524773" duration="3731000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -66,7 +70,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689412023904</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add keycloak db volume">
+      <option name="closed" value="true" />
+      <created>1689446455296</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689446455296</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add keycloak db volume" />
+    <option name="LAST_COMMIT_MESSAGE" value="add keycloak db volume" />
   </component>
 </project>

@@ -1,3 +1,6 @@
 [submodule "repainting__API"]
 	path = repainting__API
 	url = https://github.com/burunyuu23/repainting__API
+[submodule "KeycloakProvider"]
+	path = KeycloakProvider
+	url = https://github.com/burunyuu23/KeycloakProvider
