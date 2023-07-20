@@ -35,3 +35,5 @@ build/
 keycloak/*
 !keycloak/keycloak_is_here
 .env
+
+db/rating
