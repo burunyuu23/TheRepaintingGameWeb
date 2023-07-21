@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="add keycloak provider">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="add sqls and rating_db">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d/storage_v2/_src_/database/rating_db.YH6JFA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d/storage_v2/_src_/database/rating_db.YH6JFA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/palettes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/palettes_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repainting__API" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +202,7 @@
       <workItem from="1689588524773" duration="9263000" />
       <workItem from="1689766784801" duration="18247000" />
       <workItem from="1689864970455" duration="463000" />
-      <workItem from="1689865523006" duration="6920000" />
+      <workItem from="1689865523006" duration="20620000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -225,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689610922355</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add sqls and rating_db">
+      <option name="closed" value="true" />
+      <created>1689879006261</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689879006261</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +269,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="add keycloak db volume" />
     <MESSAGE value="add keycloak provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="add keycloak provider" />
+    <MESSAGE value="add sqls and rating_db" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sqls and rating_db" />
   </component>
 </project>
