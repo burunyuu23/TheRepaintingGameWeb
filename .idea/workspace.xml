@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="change db structure">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d/storage_v2/_src_/database/rating_db.YH6JFA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d/storage_v2/_src_/database/rating_db.YH6JFA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/comment_likes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/comment_likes_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/comments_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/comments_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/friends_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/friends_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/game_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/game_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/game_story_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/game_story_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/palettes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/palettes_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/post_likes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/post_likes_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/post_tags_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/post_tags_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/posts_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/posts_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/tags_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/tags_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/users_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users_palettes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/users_palettes_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users_posts_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/users_posts_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="add .env origin">
       <change beforePath="$PROJECT_DIR$/repainting__API" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repainting__API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +108,7 @@
       <workItem from="1689864970455" duration="463000" />
       <workItem from="1689865523006" duration="21896000" />
       <workItem from="1690184882088" duration="1197000" />
-      <workItem from="1690915794162" duration="2001000" />
+      <workItem from="1690915794162" duration="2443000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -168,7 +150,23 @@
       <option name="project" value="LOCAL" />
       <updated>1689979285154</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change db structure">
+      <option name="closed" value="true" />
+      <created>1690918219290</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690918219290</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add .env origin">
+      <option name="closed" value="true" />
+      <created>1690918284846</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690918284846</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +201,7 @@
     <MESSAGE value="add keycloak provider" />
     <MESSAGE value="add sqls and rating_db" />
     <MESSAGE value="change db structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="change db structure" />
+    <MESSAGE value="add .env origin" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .env origin" />
   </component>
 </project>
