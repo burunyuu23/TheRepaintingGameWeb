@@ -1,23 +1,23 @@
 version: "3.9"
 services:
-  rating-postgres:
-    image: library/postgres:${POSTGRES_RATING_IMAGE_TAG:-14}
-    container_name: ${POSTGRES_RATING_CONTAINER_NAME:-rating-postgres}
+  game-postgres:
+    image: library/postgres:${POSTGRES_GAME_IMAGE_TAG:-14}
+    container_name: ${POSTGRES_GAME_CONTAINER_NAME:-rating-postgres}
     restart: on-failure
     environment:
-      POSTGRES_USER: ${POSTGRESQL_RATING_USER}
-      POSTGRES_PASSWORD: ${POSTGRESQL_RATING_PASS}
-      POSTGRES_DB: ${POSTGRESQL_RATING_DB}
+      POSTGRES_USER: ${POSTGRESQL_GAME_USER}
+      POSTGRES_PASSWORD: ${POSTGRESQL_GAME_PASS}
+      POSTGRES_DB: ${POSTGRESQL_GAME_DB}
     volumes:
       - ./db/rating:/var/lib/postgresql/data
     healthcheck:
-      test: pg_isready -d ${POSTGRESQL_RATING_DB} -U ${POSTGRESQL_RATING_USER}
+      test: pg_isready -d ${POSTGRESQL_GAME_DB} -U ${POSTGRESQL_GAME_USER}
       interval: 10s
       timeout: 5s
       retries: 3
       start_period: 5s
     ports:
-      - ${POSTGRESQL_RATING_PORT:-5436}:5432
+      - ${POSTGRESQL_GAME_PORT:-5436}:5432
     deploy:
       resources:
         limits:

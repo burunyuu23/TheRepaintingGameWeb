@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="rating_db@localhost">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.48">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>1298</IntrospectionStateNumber>
+      <Grants>1||-9223372036854775808|c|G
+1||10|c|G
+1||10|C|G
+1||10|T|G
+13779||-9223372036854775808|c|G
+13779||10|c|G
+13779||10|C|G
+13779||10|T|G</Grants>
+      <IntrospectionStateNumber>1542</IntrospectionStateNumber>
       <ServerVersion>14.8</ServerVersion>
-      <StartupTime>1689865530</StartupTime>
+      <StartupTime>1690890739</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1406,7 +1414,7 @@ true posixrules
 13414||10|C|G
 13414||-9223372036854775808|U|G
 13414||10|U|G</Grants>
-      <IntrospectionStateNumber>1298</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1542</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>dnlkk</OwnerName>
     </database>
@@ -4831,7 +4839,9 @@ true posixrules
     <schema id="262" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1298</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1542</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-08-01.22:22:59.210</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-08-01.19:23:00</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>dnlkk</OwnerName>
@@ -4945,24 +4955,18 @@ true posixrules
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18108</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>comment_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1295</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>18088</RefTableId>
-      <RefTableName>comments</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="281" parent="263" name="comment_likes_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18113</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1295</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="282" parent="263" name="comment_likes_pkey">
       <ColNames>comment_id
@@ -5020,24 +5024,18 @@ default</CollationNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18093</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>post_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1293</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>18046</RefTableId>
-      <RefTableName>posts</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="289" parent="264" name="comments_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18098</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1293</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="290" parent="264" name="comments_pkey">
       <ColNames>comment_id</ColNames>
@@ -5081,24 +5079,18 @@ default</CollationNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18036</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1283</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="296" parent="265" name="friends_who_should_accept_user_id_fkey">
       <ColNames>who_should_accept_user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18041</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1283</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="297" parent="265" name="friends_pkey">
       <ColNames>who_add_user_id
@@ -5183,24 +5175,18 @@ pg_catalog</CollationParentNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17969</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1273</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="308" parent="266" name="non_rating_game_palettes_id_fkey">
       <ColNames>palettes_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17964</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>palettes_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1273</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17944</RefTableId>
-      <RefTableName>palettes</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="309" parent="266" name="non_rating_game_pkey">
       <ColNames>game_id</ColNames>
@@ -5261,12 +5247,9 @@ pg_catalog</CollationParentNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17999</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>game_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1277</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17956</RefTableId>
-      <RefTableName>non_rating_game</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="317" parent="267" name="non_rating_game_story_pkey">
       <ColNames>game_id
@@ -5314,12 +5297,9 @@ round</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17951</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1271</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="323" parent="268" name="palettes_pkey">
       <ColNames>palettes_id</ColNames>
@@ -5356,24 +5336,18 @@ round</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18123</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>post_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1297</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>18046</RefTableId>
-      <RefTableName>posts</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="328" parent="269" name="post_likes_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18128</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1297</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="329" parent="269" name="post_likes_pkey">
       <ColNames>post_id
@@ -5423,24 +5397,18 @@ default</CollationNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18083</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>post_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1291</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>18046</RefTableId>
-      <RefTableName>posts</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="335" parent="270" name="post_tags_tag_id_fkey">
       <ColNames>tag_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18078</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>tag_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1291</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>18053</RefTableId>
-      <RefTableName>tags</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="336" parent="270" name="post_tags_pkey">
       <ColNames>tag_id
@@ -5555,24 +5523,18 @@ post_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17987</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1275</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="352" parent="272" name="rating_game_palettes_id_fkey">
       <ColNames>palettes_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17982</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>palettes_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1275</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17944</RefTableId>
-      <RefTableName>palettes</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="353" parent="272" name="rating_game_pkey">
       <ColNames>game_id</ColNames>
@@ -5640,12 +5602,9 @@ post_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18011</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>game_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1279</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17974</RefTableId>
-      <RefTableName>rating_game</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="362" parent="273" name="rating_game_story_pkey">
       <ColNames>game_id
@@ -5749,24 +5708,18 @@ round</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18021</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>palettes_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1281</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17944</RefTableId>
-      <RefTableName>palettes</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="375" parent="276" name="users_palettes_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18026</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1281</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="376" parent="276" name="users_palettes_pkey">
       <ColNames>user_id
@@ -5807,24 +5760,18 @@ palettes_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18068</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>user_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1289</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>17939</RefTableId>
-      <RefTableName>users</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="381" parent="277" name="users_posts_post_id_fkey">
       <ColNames>post_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18063</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <RefColNames>post_id</RefColNames>
-      <RefColPositions>1</RefColPositions>
       <StateNumber>1289</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>18046</RefTableId>
-      <RefTableName>posts</RefTableName>
-      <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="382" parent="277" name="users_posts_pkey">
       <ColNames>user_id

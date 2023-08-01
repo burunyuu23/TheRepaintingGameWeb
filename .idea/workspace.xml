@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="add sqls and rating_db">
+    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="change db structure">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d/storage_v2/_src_/database/rating_db.YH6JFA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d/storage_v2/_src_/database/rating_db.YH6JFA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/palettes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/palettes_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/comment_likes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/comment_likes_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/comments_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/comments_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/friends_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/friends_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/game_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game_story_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/game_story_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/palettes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/palettes_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/post_likes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/post_likes_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/post_tags_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/post_tags_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/posts_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/posts_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/tags_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/tags_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/users_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_palettes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/users_palettes_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/users_posts_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repainting__API" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +69,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\game" />
+      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\users" />
       <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\keycloak\import" />
     </key>
   </component>
@@ -86,99 +101,6 @@
       <script-mode>FILE</script-mode>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="TheRepaintingGameWeb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="TheRepaintingGameWeb" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="TheRepaintingGameWeb" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="TheRepaintingGameWeb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="TheRepaintingGameWeb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="TheRepaintingGameWeb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="TheRepaintingGameWeb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Database Script.comments_data.sql" />
@@ -202,7 +124,9 @@
       <workItem from="1689588524773" duration="9263000" />
       <workItem from="1689766784801" duration="18247000" />
       <workItem from="1689864970455" duration="463000" />
-      <workItem from="1689865523006" duration="20620000" />
+      <workItem from="1689865523006" duration="21896000" />
+      <workItem from="1690184882088" duration="1197000" />
+      <workItem from="1690915794162" duration="2001000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -236,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689879006261</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change db structure">
+      <option name="closed" value="true" />
+      <created>1689979285154</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689979285154</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +185,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="origin/dev" />
                       </list>
                     </value>
                   </entry>
@@ -270,6 +202,7 @@
     <MESSAGE value="add keycloak db volume" />
     <MESSAGE value="add keycloak provider" />
     <MESSAGE value="add sqls and rating_db" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sqls and rating_db" />
+    <MESSAGE value="change db structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="change db structure" />
   </component>
 </project>

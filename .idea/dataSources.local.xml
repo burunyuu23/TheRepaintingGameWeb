@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-231.9225.16">
+  <component name="dataSourceStorageLocal" created-in="IU-232.8660.185">
     <data-source name="rating_db@localhost" uuid="2e4bf5d2-0c03-4688-a698-e9c9f053d56d">
       <database-info product="PostgreSQL" version="14.8 (Debian 14.8-1.pgdg120+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="14.8" exact-driver-version="42.6">
         <identifier-quote-string>&quot;</identifier-quote-string>
