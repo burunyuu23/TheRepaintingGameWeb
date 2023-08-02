@@ -4,3 +4,6 @@
 [submodule "KeycloakProvider"]
 	path = KeycloakProvider
 	url = https://github.com/burunyuu23/KeycloakProvider
+[submodule "repaint-game-frontend"]
+	path = repaint-game-frontend
+	url = https://github.com/burunyuu23/repaint-game-frontend
