@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="add .env origin">
-      <change beforePath="$PROJECT_DIR$/repainting__API" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repainting__API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/.gitignore" afterDir="false" />
+    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="forgot about users_data.sql">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game/game_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game/game_story_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/game/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game/users_palettes_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users_posts/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +55,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\users_posts" />
       <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\game" />
       <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\users" />
       <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\keycloak\import" />
@@ -108,7 +113,7 @@
       <workItem from="1689864970455" duration="463000" />
       <workItem from="1689865523006" duration="21896000" />
       <workItem from="1690184882088" duration="1197000" />
-      <workItem from="1690915794162" duration="2443000" />
+      <workItem from="1690915794162" duration="4487000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -166,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690918284846</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="forgot about users_data.sql">
+      <option name="closed" value="true" />
+      <created>1690918763545</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690918763545</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +215,7 @@
     <MESSAGE value="add sqls and rating_db" />
     <MESSAGE value="change db structure" />
     <MESSAGE value="add .env origin" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .env origin" />
+    <MESSAGE value="forgot about users_data.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgot about users_data.sql" />
   </component>
 </project>

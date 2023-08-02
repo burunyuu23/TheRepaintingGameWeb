@@ -1,3 +1,9 @@
+drop table if exists users CASCADE;
+CREATE TABLE IF NOT EXISTS users
+(
+    user_id VARCHAR(36) PRIMARY KEY
+);
+
 drop table if exists palettes CASCADE;
 CREATE TABLE IF NOT EXISTS palettes
 (
