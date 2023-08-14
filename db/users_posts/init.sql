@@ -38,9 +38,8 @@ drop table if exists users_posts CASCADE;
 CREATE TABLE IF NOT EXISTS users_posts
 (
     user_id VARCHAR(36),
-    post_id INT NOT NULL,
+    post_id INT NOT NULL PRIMARY KEY,
 
-    PRIMARY KEY (user_id, post_id),
     FOREIGN KEY (post_id) REFERENCES posts (post_id) ON DELETE CASCADE,
     FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE
 );

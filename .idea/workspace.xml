@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="update user tables">
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" afterDir="false" />
+    <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="add nextjs frontend">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repainting__API" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repainting__API/logs/repaint.log" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/logs/repaint.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/controllers/NonRatingGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/controllers/NonRatingGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/controllers/NonRatingGameNonAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/controllers/NonRatingGameNonAuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/controllers/RatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/controllers/RatingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/controllers/RatingGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/controllers/RatingGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/dtos/requests/game/GameStartRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/dtos/requests/game/GameStartRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/java/com/example/therepaintinggameweb/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +112,10 @@
       <workItem from="1689865523006" duration="21896000" />
       <workItem from="1690184882088" duration="1197000" />
       <workItem from="1690915794162" duration="5152000" />
-      <workItem from="1690970386582" duration="881000" />
+      <workItem from="1690970386582" duration="2300000" />
+      <workItem from="1691307957686" duration="1250000" />
+      <workItem from="1691398706394" duration="1765000" />
+      <workItem from="1691836783544" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -192,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690968873788</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add nextjs frontend">
+      <option name="closed" value="true" />
+      <created>1691007269043</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691007269043</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +214,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/dev" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
@@ -230,6 +235,7 @@
     <MESSAGE value="add .env origin" />
     <MESSAGE value="forgot about users_data.sql" />
     <MESSAGE value="update user tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="update user tables" />
+    <MESSAGE value="fix: CORS for frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: CORS for frontend" />
   </component>
 </project>
