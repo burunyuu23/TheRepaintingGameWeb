@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/KeycloakProvider" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/keycloak/KeycloakProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repaint-game-frontend" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repainting__API" vcs="Git" />
   </component>
 </project>
