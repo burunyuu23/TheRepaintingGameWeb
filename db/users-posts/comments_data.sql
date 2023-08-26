@@ -1,35 +1,29 @@
-INSERT INTO comments (comment_id,
-                       post_id,
-                       user_id,
-                       body)
+INSERT INTO comments (post_id,
+                      user_id,
+                      body)
 SELECT 1,
-       1,
-       '2',
+       '0cd6e3b6-7352-49e6-b423-7e48653e8cf0',
        'ТЫ ЖУЛЬНИЧАЛ, КОЧЕРЫЖКА'
-WHERE NOT EXISTS (SELECT comment_id
+WHERE NOT EXISTS (SELECT body
                   FROM comments
-                  WHERE comment_id = 1);
+                  WHERE body = 'ТЫ ЖУЛЬНИЧАЛ, КОЧЕРЫЖКА');
 
-INSERT INTO comments (comment_id,
-                      post_id,
+INSERT INTO comments (post_id,
+                      user_id,
+                      body)
+SELECT 1,
+       '11111111-1111-1111-1111111111111111',
+       'ясно хакер'
+WHERE NOT EXISTS (SELECT body
+                  FROM comments
+                  WHERE body = 'ясно хакер');
+
+INSERT INTO comments (post_id,
                       user_id,
                       body)
 SELECT 2,
-       1,
-       '1',
-       'ясно хакер'
-WHERE NOT EXISTS (SELECT comment_id
-                  FROM comments
-                  WHERE comment_id = 2);
-
-INSERT INTO comments (comment_id,
-                      post_id,
-                      user_id,
-                      body)
-SELECT 3,
-       2,
-       '1',
+       '11111111-1111-1111-1111111111111111',
        'вонючи'
-WHERE NOT EXISTS (SELECT comment_id
+WHERE NOT EXISTS (SELECT body
                   FROM comments
-                  WHERE comment_id = 3);
+                  WHERE body = 'вонючи');

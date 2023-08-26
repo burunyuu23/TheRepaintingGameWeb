@@ -1,29 +1,29 @@
-INSERT INTO posts (post_id,
-                     title,
-                     body)
-SELECT 1,
-       'Test Title',
-       'Test body.'
-WHERE NOT EXISTS (SELECT post_id
+INSERT INTO posts (title,
+                   body,
+                   author)
+SELECT 'Test Title',
+       'Test body.',
+       '11111111-1111-1111-1111111111111111'
+WHERE NOT EXISTS (SELECT *
                   FROM posts
-                  WHERE post_id = 1);
+                  WHERE title = 'Test Title');
 
-INSERT INTO posts (post_id,
-                   title,
-                   body)
-SELECT 2,
-       'Another Title',
-       'Test body 2.'
-WHERE NOT EXISTS (SELECT post_id
+INSERT INTO posts (title,
+                   body,
+                   author)
+SELECT 'Another Title',
+       'Test body 2.',
+       '11111111-1111-1111-1111111111111111'
+WHERE NOT EXISTS (SELECT *
                   FROM posts
-                  WHERE post_id = 2);
+                  WHERE title = 'Another Title');
 
-INSERT INTO posts (post_id,
-                   title,
-                   body)
-SELECT 3,
-       'Another one Title',
-       'Test body 3.'
-WHERE NOT EXISTS (SELECT post_id
+INSERT INTO posts (title,
+                   body,
+                   author)
+SELECT 'Another one Title',
+       'Test body 3.',
+       '0cd6e3b6-7352-49e6-b423-7e48653e8cf0'
+WHERE NOT EXISTS (SELECT *
                   FROM posts
-                  WHERE post_id = 3);
+                  WHERE title = 'Another one Title');
