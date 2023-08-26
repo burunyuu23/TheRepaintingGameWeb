@@ -36,4 +36,5 @@ keycloak/*
 !keycloak/keycloak_is_here
 .env
 
-db/rating
+db/repaint-game/data
+db/users-posts/data

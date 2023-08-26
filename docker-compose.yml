@@ -1,23 +1,48 @@
 version: "3.9"
 services:
-  game-postgres:
-    image: library/postgres:${POSTGRES_GAME_IMAGE_TAG:-14}
-    container_name: ${POSTGRES_GAME_CONTAINER_NAME:-rating-postgres}
+  repaint-game-postgres:
+    image: library/postgres:${POSTGRES_REPAINT_GAME_IMAGE_TAG:-14}
+    container_name: ${POSTGRES_REPAINT_GAME_CONTAINER_NAME:-repaint-game-postgres}
     restart: on-failure
     environment:
-      POSTGRES_USER: ${POSTGRESQL_GAME_USER}
-      POSTGRES_PASSWORD: ${POSTGRESQL_GAME_PASS}
-      POSTGRES_DB: ${POSTGRESQL_GAME_DB}
+      POSTGRES_USER: ${POSTGRESQL_REPAINT_GAME_USER}
+      POSTGRES_PASSWORD: ${POSTGRESQL_REPAINT_GAME_PASS}
+      POSTGRES_DB: ${POSTGRESQL_REPAINT_GAME_DB}
     volumes:
-      - ./db/rating:/var/lib/postgresql/data
+      - ./db/repaint-game/data:/var/lib/postgresql/data
+      - ./db/repaint-game/init:/docker-entrypoint-initdb.d
     healthcheck:
-      test: pg_isready -d ${POSTGRESQL_GAME_DB} -U ${POSTGRESQL_GAME_USER}
+      test: pg_isready -d ${POSTGRESQL_REPAINT_GAME_DB} -U ${POSTGRESQL_REPAINT_GAME_USER}
       interval: 10s
       timeout: 5s
       retries: 3
       start_period: 5s
     ports:
-      - ${POSTGRESQL_GAME_PORT:-5436}:5432
+      - ${POSTGRESQL_REPAINT_GAME_PORT:-5436}:5432
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+
+  user-posts-postgres:
+    image: library/postgres:${POSTGRES_USERS_POSTS_IMAGE_TAG:-14}
+    container_name: ${POSTGRES_USERS_POSTS_CONTAINER_NAME:-user-posts-postgres}
+    restart: on-failure
+    environment:
+      POSTGRES_USER: ${POSTGRESQL_USERS_POSTS_USER}
+      POSTGRES_PASSWORD: ${POSTGRESQL_USERS_POSTS_PASS}
+      POSTGRES_DB: ${POSTGRESQL_USERS_POSTS_DB}
+    volumes:
+      - ./db/users-posts/init:/docker-entrypoint-initdb.d
+      - ./db/users-posts/data:/var/lib/postgresql/data
+    healthcheck:
+      test: pg_isready -d ${POSTGRESQL_USERS_POSTS_DB} -U ${POSTGRESQL_USERS_POSTS_USER}
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    ports:
+      - ${POSTGRESQL_USERS_POSTS_PORT:-5437}:5432
     deploy:
       resources:
         limits:
@@ -32,7 +57,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRESQL_KEYCLOAK_PASS}
       POSTGRES_DB: ${POSTGRESQL_KEYCLOAK_DB}
     volumes:
-      - ./keycloak/db:/var/lib/postgresql/data
+      - ./keycloak/data:/var/lib/postgresql/data
     healthcheck:
       test: pg_isready -d ${POSTGRESQL_KEYCLOAK_DB} -U ${POSTGRESQL_KEYCLOAK_USER}
       interval: 10s
@@ -70,7 +95,7 @@ services:
       keycloak-postgres:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://0.0.0.0:8080/realms/master"]
+      test: [ "CMD", "curl", "-f", "http://0.0.0.0:8080/realms/master" ]
       start_period: 10s
       interval: 30s
       retries: 3

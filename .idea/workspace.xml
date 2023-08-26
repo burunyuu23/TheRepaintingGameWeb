@@ -5,10 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f75fd3-54b4-405c-97da-06bde20ab346" name="Changes" comment="add nextjs frontend">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d/storage_v2/_src_/database/rating_db.YH6JFA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e4bf5d2-0c03-4688-a698-e9c9f053d56d/storage_v2/_src_/database/rating_db.YH6JFA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KeycloakProvider" beforeDir="false" afterPath="$PROJECT_DIR$/KeycloakProvider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/repaint-game/init/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game/palettes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/repaint-game/init/palettes_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/game/tags_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/tags_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/comment_likes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/comment_likes_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/comments_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/comments_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/friends_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/friends_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/init/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/post_likes_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/post_likes_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/post_tags_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/post_tags_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/posts_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/posts_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/users_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/init/users_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users_posts/users_posts_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/users-posts/users_posts_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaint-game-frontend" beforeDir="false" afterPath="$PROJECT_DIR$/repaint-game-frontend" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repainting__API" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repainting__API/logs/repaint.log" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/logs/repaint.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repainting__API/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/repainting__API/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,45 +41,54 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2SbDN4nVkjiArXQZKx8Guk0d8kX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/DnlkkProjects/TheRepaintingGameWeb&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/user/DnlkkProjects/TheRepaintingGameWeb/keycloak/import",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "database.query.execution",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;2e4bf5d2-0c03-4688-a698-e9c9f053d56d/database/\&quot;rating_db\&quot;/schema/\&quot;public\&quot;&quot;
+    "RunConfigurationTargetLRU": [
+      "2e4bf5d2-0c03-4688-a698-e9c9f053d56d/database/\"rating_db\"/schema/\"public\""
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\users_posts" />
-      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\game" />
-      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\users" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\keycloak\import" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\users-posts\init" />
+      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\users_posts\init" />
+      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\repaint-game\init" />
+      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\game" />
+      <recent name="C:\Users\user\DnlkkProjects\TheRepaintingGameWeb\db\users_posts" />
+    </key>
   </component>
-  <component name="RunManager" selected="Database Script.comments_data.sql">
+  <component name="RunManager" selected="Database Script.users_data.sql">
     <configuration name="comments_data.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/db/comments_data.sql" />
       <script-mode>FILE</script-mode>
@@ -70,15 +99,14 @@
       <script-mode>FILE</script-mode>
       <method v="2" />
     </configuration>
-    <configuration name="game_story.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/db/game_story.sql" />
+    <configuration name="init.sql (1)" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/db/users_posts/init.sql" />
       <script-mode>FILE</script-mode>
       <method v="2" />
     </configuration>
-    <configuration name="init.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/db/init.sql" />
+    <configuration name="users_data.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/db/repaint-game/init/users_data.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="2e4bf5d2-0c03-4688-a698-e9c9f053d56d" namespace="database/&quot;rating_db&quot;/schema/&quot;public&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="users_palettes_data.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
@@ -88,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Database Script.users_data.sql" />
+        <item itemvalue="Database Script.init.sql (1)" />
         <item itemvalue="Database Script.comments_data.sql" />
         <item itemvalue="Database Script.users_palettes_data.sql" />
         <item itemvalue="Database Script.game_data.sql" />
-        <item itemvalue="Database Script.init.sql" />
-        <item itemvalue="Database Script.game_story.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -116,6 +144,11 @@
       <workItem from="1691307957686" duration="1250000" />
       <workItem from="1691398706394" duration="1765000" />
       <workItem from="1691836783544" duration="599000" />
+      <workItem from="1692203541892" duration="599000" />
+      <workItem from="1692253170386" duration="599000" />
+      <workItem from="1692425581423" duration="1831000" />
+      <workItem from="1692534390810" duration="599000" />
+      <workItem from="1693069917458" duration="5190000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

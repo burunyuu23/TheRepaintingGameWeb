@@ -28,7 +28,7 @@ SELECT '0',
            "hexCode": "#7442c8"
          }
        ]'::jsonb,
-       '0cd6e3b6-7352-49e6-b423-7e48653e8cf0'
+       '559cf93b-36ea-4a38-9575-3bb7e5967606'
 WHERE NOT EXISTS (SELECT palettes_id
                   FROM palettes
                   WHERE palettes_id = 0);
@@ -63,7 +63,7 @@ SELECT '1',
            "hexCode": "#ffffff"
          }
        ]'::jsonb,
-       '0cd6e3b6-7352-49e6-b423-7e48653e8cf0'
+       '559cf93b-36ea-4a38-9575-3bb7e5967606'
 WHERE NOT EXISTS (SELECT palettes_id
                   FROM palettes
                   WHERE palettes_id = 1);

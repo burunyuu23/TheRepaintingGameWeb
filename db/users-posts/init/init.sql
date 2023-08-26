@@ -2,7 +2,8 @@ drop table if exists users CASCADE;
 CREATE TABLE IF NOT EXISTS users
 (
     user_id   VARCHAR(36) PRIMARY KEY,
-    image_url varchar(255) NOT NULL DEFAULT 'https://i.ibb.co/w04Prt6/c1f64245afb2.gif'
+    image_url varchar(255) NOT NULL DEFAULT 'https://i.ibb.co/w04Prt6/c1f64245afb2.gif',
+    birthdate date         NOT NULL
 );
 
 drop table if exists friends CASCADE;

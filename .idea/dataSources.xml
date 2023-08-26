@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="rating_db@localhost" uuid="2e4bf5d2-0c03-4688-a698-e9c9f053d56d">
+    <data-source source="LOCAL" name="repaint_game_db@localhost" uuid="bc254af0-72ab-4036-91e5-98162e835968">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5436/rating_db</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5436/repaint_game_db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="users_posts_db@localhost" uuid="ea83e164-86e9-4216-a41f-19d5651ec928">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5437/users_posts_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
