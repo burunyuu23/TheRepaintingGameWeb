@@ -23,6 +23,8 @@ services:
       resources:
         limits:
           memory: 256M
+    networks:
+      - repainting-network
 
   user-posts-postgres:
     image: library/postgres:${POSTGRES_USERS_POSTS_IMAGE_TAG:-14}
@@ -47,6 +49,8 @@ services:
       resources:
         limits:
           memory: 256M
+    networks:
+      - user-posts-network
 
   keycloak-postgres:
     image: library/postgres:${POSTGRES_KEYCLOAK_IMAGE_TAG:-14}
@@ -70,6 +74,8 @@ services:
       resources:
         limits:
           memory: 256M
+    networks:
+      - keycloak-network
 
   keycloak:
     image: quay.io/keycloak/keycloak:${KEYCLOAK_VERSION}
@@ -100,3 +106,30 @@ services:
       interval: 30s
       retries: 3
       timeout: 5s
+    networks:
+      - keycloak-network
+
+  # repainting-api:
+  #   container_name: repainting-api
+  #   build: repainting__API/.
+  #   ports:
+  #     - "127.0.0.1:5000:5000"
+  #   environment:
+  #     SERVER_URL: http://repainting-api
+  #     FRONTEND_URL: http://localhost:3000
+  #     KEYCLOAK_URL: http://keycloak:8282
+  #     POSTGRESQL_REPAINT_GAME_URI: jdbc:postgresql://repaint-game-postgres:5436/repaint_game_db?stringtype=unspecified
+  #     POSTGRESQL_REPAINT_GAME_USER: ${POSTGRESQL_REPAINT_GAME_USER}
+  #     POSTGRESQL_REPAINT_GAME_PASS: ${POSTGRESQL_REPAINT_GAME_PASS}
+  #   volumes:
+  #     - ./repainting-api-logs:/app/logs
+  #   depends_on:
+  #     - repaint-game-postgres
+  #   networks:
+  #     - repainting-network
+  #     - keycloak-network
+
+networks:
+  repainting-network:
+  keycloak-network:
+  user-posts-network:

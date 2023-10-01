@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS users
 drop table if exists palettes CASCADE;
 CREATE TABLE IF NOT EXISTS palettes
 (
-    palettes_id     INT PRIMARY KEY,
+    palettes_id     INT PRIMARY KEY generated always as identity,
     palette         JSONB       NOT NULL,
     created_user_id VARCHAR(36) NOT NULL,
 

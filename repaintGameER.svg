@@ -1,0 +1,237 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(0,500) scale(1.2)">
+<title>G</title>
+<polygon fill="transparent" stroke="transparent" points="-4,4 -4,-418 890,-418 890,4 -4,4"></polygon>
+<!-- users -->
+<g id="node1" class="node">
+<title>users</title>
+<polygon fill="#232d95" stroke="transparent" points="744,-161 744,-179 886,-179 886,-161 744,-161"></polygon>
+<polygon fill="none" stroke="white" points="744,-161 744,-179 886,-179 886,-161 744,-161"></polygon>
+<text text-anchor="start" x="747" y="-168" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">users</text>
+<polygon fill="#404040" stroke="transparent" points="744,-143 744,-161 886,-161 886,-143 744,-143"></polygon>
+<polygon fill="none" stroke="white" points="744,-143 744,-161 886,-161 886,-143 744,-143"></polygon>
+<text text-anchor="start" x="747" y="-150" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="762.28" y="-150" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="769.28" y="-150" font-family="opensans" font-size="10.00" fill="white"> user_id varchar(36)</text>
+<polygon fill="#404040" stroke="transparent" points="744,-125 744,-143 886,-143 886,-125 744,-125"></polygon>
+<polygon fill="none" stroke="white" points="744,-125 744,-143 886,-143 886,-125 744,-125"></polygon>
+<text text-anchor="start" x="746.82" y="-131" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;username VARCHAR(255)</text>
+</g>
+<!-- palettes -->
+<g id="node2" class="node">
+<title>palettes</title>
+<polygon fill="#232d95" stroke="transparent" points="494,-152 494,-170 708,-170 708,-152 494,-152"></polygon>
+<polygon fill="none" stroke="white" points="494,-152 494,-170 708,-170 708,-152 494,-152"></polygon>
+<text text-anchor="start" x="497" y="-159" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">palettes</text>
+<polygon fill="#404040" stroke="transparent" points="494,-134 494,-152 708,-152 708,-134 494,-134"></polygon>
+<polygon fill="none" stroke="white" points="494,-134 494,-152 708,-152 708,-134 494,-134"></polygon>
+<text text-anchor="start" x="497" y="-141" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="512.28" y="-141" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="519.28" y="-141" font-family="opensans" font-size="10.00" fill="white"> palettes_id INT</text>
+<polygon fill="#404040" stroke="transparent" points="494,-116 494,-134 708,-134 708,-116 494,-116"></polygon>
+<polygon fill="none" stroke="white" points="494,-116 494,-134 708,-134 708,-116 494,-116"></polygon>
+<text text-anchor="start" x="497" y="-122" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;palette jsonb NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="494,-98 494,-116 708,-116 708,-98 494,-98"></polygon>
+<polygon fill="none" stroke="white" points="494,-98 494,-116 708,-116 708,-98 494,-98"></polygon>
+<text text-anchor="start" x="496.84" y="-105" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="512.12" y="-105" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="519.12" y="-105" font-family="opensans" font-size="10.00" fill="white"> created_user_id VARCHAR(36) NOT NULL</text>
+</g>
+<!-- palettes&#45;&gt;users -->
+<g id="edge1" class="edge" style="opacity: 1;">
+<title>palettes:created_user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M708,-107C729.41,-107 722.28,-138.45 734.33,-148.76"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="733.41,-152.15 744,-152 735.63,-145.51 733.41,-152.15"></polygon>
+</g>
+<!-- non_rating_game -->
+<g id="node3" class="node">
+<title>non_rating_game</title>
+<polygon fill="#232d95" stroke="transparent" points="218,-396 218,-414 458,-414 458,-396 218,-396"></polygon>
+<polygon fill="none" stroke="white" points="218,-396 218,-414 458,-414 458,-396 218,-396"></polygon>
+<text text-anchor="start" x="221" y="-403" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">non_rating_game</text>
+<polygon fill="#404040" stroke="transparent" points="218,-378 218,-396 458,-396 458,-378 218,-378"></polygon>
+<polygon fill="none" stroke="white" points="218,-378 218,-396 458,-396 458,-378 218,-378"></polygon>
+<text text-anchor="start" x="221" y="-385" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="236.28" y="-385" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="243.28" y="-385" font-family="opensans" font-size="10.00" fill="white"> game_id varchar(255</text>
+<polygon fill="#404040" stroke="transparent" points="218,-360 218,-378 458,-378 458,-360 218,-360"></polygon>
+<polygon fill="none" stroke="white" points="218,-360 218,-378 458,-378 458,-360 218,-360"></polygon>
+<text text-anchor="start" x="221" y="-367" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="236.28" y="-367" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="243.28" y="-367" font-family="opensans" font-size="10.00" fill="white"> user_id VARCHAR(36) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-342 218,-360 458,-360 458,-342 218,-342"></polygon>
+<polygon fill="none" stroke="white" points="218,-342 218,-360 458,-360 458,-342 218,-342"></polygon>
+<text text-anchor="start" x="221" y="-348" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map jsonb NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-324 218,-342 458,-342 458,-324 218,-324"></polygon>
+<polygon fill="none" stroke="white" points="218,-324 218,-342 458,-342 458,-324 218,-324"></polygon>
+<text text-anchor="start" x="221" y="-330" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;max_rounds INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-306 218,-324 458,-324 458,-306 218,-306"></polygon>
+<polygon fill="none" stroke="white" points="218,-306 218,-324 458,-324 458,-306 218,-306"></polygon>
+<text text-anchor="start" x="221" y="-313" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="236.28" y="-313" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="243.28" y="-313" font-family="opensans" font-size="10.00" fill="white"> palettes_id INT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-288 218,-306 458,-306 458,-288 218,-288"></polygon>
+<polygon fill="none" stroke="white" points="218,-288 218,-306 458,-306 458,-288 218,-288"></polygon>
+<text text-anchor="start" x="220.66" y="-294" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;is_end BOOLEAN NOT NULL DEFAULT FALSE</text>
+<polygon fill="#404040" stroke="transparent" points="218,-270 218,-288 458,-288 458,-270 218,-270"></polygon>
+<polygon fill="none" stroke="white" points="218,-270 218,-288 458,-288 458,-270 218,-270"></polygon>
+<text text-anchor="start" x="221" y="-276" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;is_win BOOLEAN NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-252 218,-270 458,-270 458,-252 218,-252"></polygon>
+<polygon fill="none" stroke="white" points="218,-252 218,-270 458,-270 458,-252 218,-252"></polygon>
+<text text-anchor="start" x="221" y="-258" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;start_time TIMESTAMP NOT NULL</text>
+</g>
+<!-- non_rating_game&#45;&gt;users -->
+<g id="edge3" class="edge">
+<title>non_rating_game:user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M458,-369C591.62,-369 611.87,-294.81 708,-202 724.78,-185.8 719.23,-160.93 734.12,-153.91"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="734.84,-157.33 744,-152 733.52,-150.46 734.84,-157.33"></polygon>
+</g>
+<!-- non_rating_game&#45;&gt;palettes -->
+<g id="edge2" class="edge" style="opacity: 1;">
+<title>non_rating_game:palettes_id-&gt;palettes:palettes_id</title>
+<path fill="none" stroke="#5ea54a" d="M458,-315C532.29,-315 427.16,-159.39 483.93,-144.19"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="484.48,-147.65 494,-143 483.66,-140.7 484.48,-147.65"></polygon>
+</g>
+<!-- rating_game -->
+<g id="node4" class="node" style="opacity: 1;">
+<title>rating_game</title>
+<polygon fill="#232d95" stroke="transparent" points="218,-216 218,-234 458,-234 458,-216 218,-216"></polygon>
+<polygon fill="none" stroke="white" points="218,-216 218,-234 458,-234 458,-216 218,-216"></polygon>
+<text text-anchor="start" x="221" y="-223" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">rating_game</text>
+<polygon fill="#404040" stroke="transparent" points="218,-198 218,-216 458,-216 458,-198 218,-198"></polygon>
+<polygon fill="none" stroke="white" points="218,-198 218,-216 458,-216 458,-198 218,-198"></polygon>
+<text text-anchor="start" x="221" y="-205" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="236.28" y="-205" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="243.28" y="-205" font-family="opensans" font-size="10.00" fill="white"> game_id varchar(255</text>
+<polygon fill="#404040" stroke="transparent" points="218,-180 218,-198 458,-198 458,-180 218,-180"></polygon>
+<polygon fill="none" stroke="white" points="218,-180 218,-198 458,-198 458,-180 218,-180"></polygon>
+<text text-anchor="start" x="221" y="-187" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="236.28" y="-187" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="243.28" y="-187" font-family="opensans" font-size="10.00" fill="white"> user_id VARCHAR(36) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-162 218,-180 458,-180 458,-162 218,-162"></polygon>
+<polygon fill="none" stroke="white" points="218,-162 218,-180 458,-180 458,-162 218,-162"></polygon>
+<text text-anchor="start" x="221" y="-168" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map jsonb NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-144 218,-162 458,-162 458,-144 218,-144"></polygon>
+<polygon fill="none" stroke="white" points="218,-144 218,-162 458,-162 458,-144 218,-144"></polygon>
+<text text-anchor="start" x="221" y="-151" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="236.28" y="-151" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="243.28" y="-151" font-family="opensans" font-size="10.00" fill="white"> palettes_id INT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-126 218,-144 458,-144 458,-126 218,-126"></polygon>
+<polygon fill="none" stroke="white" points="218,-126 218,-144 458,-144 458,-126 218,-126"></polygon>
+<text text-anchor="start" x="220.66" y="-132" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;is_end BOOLEAN NOT NULL DEFAULT FALSE</text>
+<polygon fill="#404040" stroke="transparent" points="218,-108 218,-126 458,-126 458,-108 218,-108"></polygon>
+<polygon fill="none" stroke="white" points="218,-108 218,-126 458,-126 458,-108 218,-108"></polygon>
+<text text-anchor="start" x="221" y="-114" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;is_win BOOLEAN NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-90 218,-108 458,-108 458,-90 218,-90"></polygon>
+<polygon fill="none" stroke="white" points="218,-90 218,-108 458,-108 458,-90 218,-90"></polygon>
+<text text-anchor="start" x="221" y="-96" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rating INT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="218,-72 218,-90 458,-90 458,-72 218,-72"></polygon>
+<polygon fill="none" stroke="white" points="218,-72 218,-90 458,-90 458,-72 218,-72"></polygon>
+<text text-anchor="start" x="221" y="-78" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;start_time TIMESTAMP NOT NULL</text>
+</g>
+<!-- rating_game&#45;&gt;users -->
+<g id="edge5" class="edge" style="opacity: 1;">
+<title>rating_game:user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M458,-189C569.2,-189 603.23,-216.27 708,-179 722.87,-173.71 724.23,-159.96 733.98,-154.39"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="735.09,-157.72 744,-152 733.46,-150.92 735.09,-157.72"></polygon>
+</g>
+<!-- rating_game&#45;&gt;palettes -->
+<g id="edge4" class="edge" style="opacity: 1;">
+<title>rating_game:palettes_id-&gt;palettes:palettes_id</title>
+<path fill="none" stroke="#5ea54a" d="M458,-153C470.58,-153 475.23,-147.26 483.97,-144.48"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="484.62,-147.92 494,-143 483.6,-140.99 484.62,-147.92"></polygon>
+</g>
+<!-- non_rating_game_story -->
+<g id="node5" class="node" style="opacity: 1;">
+<title>non_rating_game_story</title>
+<polygon fill="#232d95" stroke="transparent" points="0,-396 0,-414 182,-414 182,-396 0,-396"></polygon>
+<polygon fill="none" stroke="white" points="0,-396 0,-414 182,-414 182,-396 0,-396"></polygon>
+<text text-anchor="start" x="3" y="-403" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">non_rating_game_story</text>
+<polygon fill="#404040" stroke="transparent" points="0,-378 0,-396 182,-396 182,-378 0,-378"></polygon>
+<polygon fill="none" stroke="white" points="0,-378 0,-396 182,-396 182,-378 0,-378"></polygon>
+<text text-anchor="start" x="3" y="-385" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.28" y="-385" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.28" y="-385" font-family="opensans" font-size="10.00" fill="white"> game_id varchar(255) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-360 0,-378 182,-378 182,-360 0,-360"></polygon>
+<polygon fill="none" stroke="white" points="0,-360 0,-378 182,-378 182,-360 0,-360"></polygon>
+<text text-anchor="start" x="3" y="-366" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;round_map jsonb NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-342 0,-360 182,-360 182,-342 0,-342"></polygon>
+<polygon fill="none" stroke="white" points="0,-342 0,-360 182,-360 182,-342 0,-342"></polygon>
+<text text-anchor="start" x="3" y="-348" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;round INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-324 0,-342 182,-342 182,-324 0,-324"></polygon>
+<polygon fill="none" stroke="white" points="0,-324 0,-342 182,-342 182,-324 0,-324"></polygon>
+<text text-anchor="start" x="3" y="-330" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;chosen_color INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-306 0,-324 182,-324 182,-306 0,-306"></polygon>
+<polygon fill="none" stroke="white" points="0,-306 0,-324 182,-324 182,-306 0,-306"></polygon>
+<text text-anchor="start" x="2.82" y="-312" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;step_time TIMESTAMP NOT NULL</text>
+</g>
+<!-- non_rating_game_story&#45;&gt;non_rating_game -->
+<g id="edge6" class="edge" style="opacity: 1;">
+<title>non_rating_game_story:game_id-&gt;non_rating_game:game_id</title>
+<path fill="none" stroke="#5ea54a" d="M182,-387C194,-387 199.25,-387 207.88,-387"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="208,-390.5 218,-387 208,-383.5 208,-390.5"></polygon>
+</g>
+<!-- rating_game_story -->
+<g id="node6" class="node" style="opacity: 1;">
+<title>rating_game_story</title>
+<polygon fill="#232d95" stroke="transparent" points="0,-216 0,-234 182,-234 182,-216 0,-216"></polygon>
+<polygon fill="none" stroke="white" points="0,-216 0,-234 182,-234 182,-216 0,-216"></polygon>
+<text text-anchor="start" x="3" y="-223" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">rating_game_story</text>
+<polygon fill="#404040" stroke="transparent" points="0,-198 0,-216 182,-216 182,-198 0,-198"></polygon>
+<polygon fill="none" stroke="white" points="0,-198 0,-216 182,-216 182,-198 0,-198"></polygon>
+<text text-anchor="start" x="3" y="-205" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.28" y="-205" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.28" y="-205" font-family="opensans" font-size="10.00" fill="white"> game_id varchar(255) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-180 0,-198 182,-198 182,-180 0,-180"></polygon>
+<polygon fill="none" stroke="white" points="0,-180 0,-198 182,-198 182,-180 0,-180"></polygon>
+<text text-anchor="start" x="3" y="-186" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;round_map jsonb NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-162 0,-180 182,-180 182,-162 0,-162"></polygon>
+<polygon fill="none" stroke="white" points="0,-162 0,-180 182,-180 182,-162 0,-162"></polygon>
+<text text-anchor="start" x="3" y="-168" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;round INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-144 0,-162 182,-162 182,-144 0,-144"></polygon>
+<polygon fill="none" stroke="white" points="0,-144 0,-162 182,-162 182,-144 0,-144"></polygon>
+<text text-anchor="start" x="3" y="-150" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rating_change INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-126 0,-144 182,-144 182,-126 0,-126"></polygon>
+<polygon fill="none" stroke="white" points="0,-126 0,-144 182,-144 182,-126 0,-126"></polygon>
+<text text-anchor="start" x="3" y="-132" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;chosen_color INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-108 0,-126 182,-126 182,-108 0,-108"></polygon>
+<polygon fill="none" stroke="white" points="0,-108 0,-126 182,-126 182,-108 0,-108"></polygon>
+<text text-anchor="start" x="2.82" y="-114" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;step_time TIMESTAMP NOT NULL</text>
+</g>
+<!-- rating_game_story&#45;&gt;rating_game -->
+<g id="edge7" class="edge" style="opacity: 1;">
+<title>rating_game_story:game_id-&gt;rating_game:game_id</title>
+<path fill="none" stroke="#5ea54a" d="M182,-207C194,-207 199.25,-207 207.88,-207"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="208,-210.5 218,-207 208,-203.5 208,-210.5"></polygon>
+</g>
+<!-- users_palettes -->
+<g id="node7" class="node" style="opacity: 1;">
+<title>users_palettes</title>
+<polygon fill="#232d95" stroke="transparent" points="248,-36 248,-54 428,-54 428,-36 248,-36"></polygon>
+<polygon fill="none" stroke="white" points="248,-36 248,-54 428,-54 428,-36 248,-36"></polygon>
+<text text-anchor="start" x="251" y="-43" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">users_palettes</text>
+<polygon fill="#404040" stroke="transparent" points="248,-18 248,-36 428,-36 428,-18 248,-18"></polygon>
+<polygon fill="none" stroke="white" points="248,-18 248,-36 428,-36 428,-18 248,-18"></polygon>
+<text text-anchor="start" x="251" y="-25" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="266.28" y="-25" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="273.28" y="-25" font-family="opensans" font-size="10.00" fill="white"> palettes_id INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="248,0 248,-18 428,-18 428,0 248,0"></polygon>
+<polygon fill="none" stroke="white" points="248,0 248,-18 428,-18 428,0 248,0"></polygon>
+<text text-anchor="start" x="250.77" y="-7" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="266.05" y="-7" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="273.05" y="-7" font-family="opensans" font-size="10.00" fill="white"> user_id VARCHAR(36) NOT NULL</text>
+</g>
+<!-- users_palettes&#45;&gt;users -->
+<g id="edge9" class="edge" style="opacity: 1;">
+<title>users_palettes:user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M429,-9C558,-9 606.53,-9.36 708,-89 730,-106.27 716.66,-140.96 733.76,-149.88"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="733.5,-153.39 744,-152 734.92,-146.54 733.5,-153.39"></polygon>
+</g>
+<!-- users_palettes&#45;&gt;palettes -->
+<g id="edge8" class="edge" style="opacity: 1;">
+<title>users_palettes:palettes_id-&gt;palettes:palettes_id</title>
+<path fill="none" stroke="#5ea54a" d="M429,-27C484.29,-27 441.29,-128.53 483.91,-141.62"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="483.62,-145.11 494,-143 484.57,-138.17 483.62,-145.11"></polygon>
+</g>
+</g>
+</svg>

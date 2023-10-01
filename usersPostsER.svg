@@ -1,0 +1,230 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(10,500) scale(1)">
+<title>G</title>
+<polygon fill="transparent" stroke="transparent" points="-4,4 -4,-397.81 1235,-397.81 1235,4 -4,4"></polygon>
+<!-- users -->
+<g id="node1" class="node">
+<title>users</title>
+<polygon fill="#232d95" stroke="transparent" points="769,-212.74 769,-230.74 1231,-230.74 1231,-212.74 769,-212.74"></polygon>
+<polygon fill="none" stroke="white" points="769,-212.74 769,-230.74 1231,-230.74 1231,-212.74 769,-212.74"></polygon>
+<text text-anchor="start" x="772" y="-219.74" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">users</text>
+<polygon fill="#404040" stroke="transparent" points="769,-194.74 769,-212.74 1231,-212.74 1231,-194.74 769,-194.74"></polygon>
+<polygon fill="none" stroke="white" points="769,-194.74 769,-212.74 1231,-212.74 1231,-194.74 769,-194.74"></polygon>
+<text text-anchor="start" x="772" y="-201.74" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="787.28" y="-201.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="794.28" y="-201.74" font-family="opensans" font-size="10.00" fill="white"> user_id VARCHAR(36</text>
+<polygon fill="#404040" stroke="transparent" points="769,-176.74 769,-194.74 1231,-194.74 1231,-176.74 769,-176.74"></polygon>
+<polygon fill="none" stroke="white" points="769,-176.74 769,-194.74 1231,-194.74 1231,-176.74 769,-176.74"></polygon>
+<text text-anchor="start" x="771.72" y="-182.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;profile_image_url VARCHAR(255) NOT NULL DEFAULT 'https://i.ibb.co/LNdXxj0/default-profile.png'</text>
+<polygon fill="#404040" stroke="transparent" points="769,-158.74 769,-176.74 1231,-176.74 1231,-158.74 769,-158.74"></polygon>
+<polygon fill="none" stroke="white" points="769,-158.74 769,-176.74 1231,-176.74 1231,-158.74 769,-158.74"></polygon>
+<text text-anchor="start" x="772" y="-164.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;banner_image_url VARCHAR(255) NOT NULL DEFAULT 'https://i.ibb.co/b6cZ0Rr/defalut-banner.png'</text>
+<polygon fill="#404040" stroke="transparent" points="769,-140.74 769,-158.74 1231,-158.74 1231,-140.74 769,-140.74"></polygon>
+<polygon fill="none" stroke="white" points="769,-140.74 769,-158.74 1231,-158.74 1231,-140.74 769,-140.74"></polygon>
+<text text-anchor="start" x="772" y="-146.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;birthdate DATE NOT NULL</text>
+</g>
+<!-- friends -->
+<g id="node2" class="node" style="opacity: 1;">
+<title>friends</title>
+<polygon fill="#232d95" stroke="transparent" points="469,-221.74 469,-239.74 733,-239.74 733,-221.74 469,-221.74"></polygon>
+<polygon fill="none" stroke="white" points="469,-221.74 469,-239.74 733,-239.74 733,-221.74 469,-221.74"></polygon>
+<text text-anchor="start" x="472" y="-228.74" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">friends</text>
+<polygon fill="#404040" stroke="transparent" points="469,-203.74 469,-221.74 733,-221.74 733,-203.74 469,-203.74"></polygon>
+<polygon fill="none" stroke="white" points="469,-203.74 469,-221.74 733,-221.74 733,-203.74 469,-203.74"></polygon>
+<text text-anchor="start" x="472" y="-210.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="487.28" y="-210.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="494.28" y="-210.74" font-family="opensans" font-size="10.00" fill="white"> who_add_user_id VARCHAR(36) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="469,-185.74 469,-203.74 733,-203.74 733,-185.74 469,-185.74"></polygon>
+<polygon fill="none" stroke="white" points="469,-185.74 469,-203.74 733,-203.74 733,-185.74 469,-185.74"></polygon>
+<text text-anchor="start" x="471.56" y="-192.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="486.84" y="-192.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="493.84" y="-192.74" font-family="opensans" font-size="10.00" fill="white"> who_should_accept_user_id VARCHAR(36) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="469,-167.74 469,-185.74 733,-185.74 733,-167.74 469,-167.74"></polygon>
+<polygon fill="none" stroke="white" points="469,-167.74 469,-185.74 733,-185.74 733,-167.74 469,-167.74"></polygon>
+<text text-anchor="start" x="472" y="-173.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;is_accept BOOLEAN NOT NULL</text>
+</g>
+<!-- friends&#45;&gt;users -->
+<g id="edge1" class="edge" style="opacity: 1;">
+<title>friends:who_add_user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M733,-212.74C745.5,-212.74 750.26,-207.57 759.01,-205.06"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="759.55,-208.52 769,-203.74 758.63,-201.58 759.55,-208.52"></polygon>
+</g>
+<!-- friends&#45;&gt;users -->
+<g id="edge2" class="edge" style="opacity: 1;">
+<title>friends:who_should_accept_user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M733,-194.74C745.5,-194.74 750.26,-199.9 759.01,-202.41"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="758.63,-205.89 769,-203.74 759.55,-198.95 758.63,-205.89"></polygon>
+</g>
+<!-- posts -->
+<g id="node3" class="node" style="opacity: 1;">
+<title>posts</title>
+<polygon fill="#232d95" stroke="transparent" points="513,-329.74 513,-347.74 689,-347.74 689,-329.74 513,-329.74"></polygon>
+<polygon fill="none" stroke="white" points="513,-329.74 513,-347.74 689,-347.74 689,-329.74 513,-329.74"></polygon>
+<text text-anchor="start" x="516" y="-336.74" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">posts</text>
+<polygon fill="#404040" stroke="transparent" points="513,-311.74 513,-329.74 689,-329.74 689,-311.74 513,-311.74"></polygon>
+<polygon fill="none" stroke="white" points="513,-311.74 513,-329.74 689,-329.74 689,-311.74 513,-311.74"></polygon>
+<text text-anchor="start" x="516" y="-318.74" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="531.28" y="-318.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="538.28" y="-318.74" font-family="opensans" font-size="10.00" fill="white"> post_id INT</text>
+<polygon fill="#404040" stroke="transparent" points="513,-293.74 513,-311.74 689,-311.74 689,-293.74 513,-293.74"></polygon>
+<polygon fill="none" stroke="white" points="513,-293.74 513,-311.74 689,-311.74 689,-293.74 513,-293.74"></polygon>
+<text text-anchor="start" x="516" y="-300.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="531.28" y="-300.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="538.28" y="-300.74" font-family="opensans" font-size="10.00" fill="white"> user_id VARCHAR(36)</text>
+<polygon fill="#404040" stroke="transparent" points="513,-275.74 513,-293.74 689,-293.74 689,-275.74 513,-275.74"></polygon>
+<polygon fill="none" stroke="white" points="513,-275.74 513,-293.74 689,-293.74 689,-275.74 513,-275.74"></polygon>
+<text text-anchor="start" x="516" y="-281.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;title VARCHAR(255) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="513,-257.74 513,-275.74 689,-275.74 689,-257.74 513,-257.74"></polygon>
+<polygon fill="none" stroke="white" points="513,-257.74 513,-275.74 689,-275.74 689,-257.74 513,-257.74"></polygon>
+<text text-anchor="start" x="515.88" y="-263.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;body VARCHAR(255) NOT NULL</text>
+</g>
+<!-- posts&#45;&gt;users -->
+<g id="edge3" class="edge" style="opacity: 1;">
+<title>posts:user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M690,-302.74C691.46,-302.74 743.47,-234.84 762.31,-211.5"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="765.13,-213.6 769,-203.74 759.82,-209.03 765.13,-213.6"></polygon>
+</g>
+<!-- tags -->
+<g id="node4" class="node" style="opacity: 1;">
+<title>tags</title>
+<polygon fill="#232d95" stroke="transparent" points="530,-93.74 530,-111.74 672,-111.74 672,-93.74 530,-93.74"></polygon>
+<polygon fill="none" stroke="white" points="530,-93.74 530,-111.74 672,-111.74 672,-93.74 530,-93.74"></polygon>
+<text text-anchor="start" x="533" y="-100.74" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">tags</text>
+<polygon fill="#404040" stroke="transparent" points="530,-75.74 530,-93.74 672,-93.74 672,-75.74 530,-75.74"></polygon>
+<polygon fill="none" stroke="white" points="530,-75.74 530,-93.74 672,-93.74 672,-75.74 530,-75.74"></polygon>
+<text text-anchor="start" x="533" y="-82.74" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="548.28" y="-82.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="555.28" y="-82.74" font-family="opensans" font-size="10.00" fill="white"> tag_id INT</text>
+<polygon fill="#404040" stroke="transparent" points="530,-57.74 530,-75.74 672,-75.74 672,-57.74 530,-57.74"></polygon>
+<polygon fill="none" stroke="white" points="530,-57.74 530,-75.74 672,-75.74 672,-57.74 530,-57.74"></polygon>
+<text text-anchor="start" x="532.54" y="-63.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tag_name VARCHAR(255)</text>
+</g>
+<!-- post_tags -->
+<g id="node5" class="node" style="opacity: 1;">
+<title>post_tags</title>
+<polygon fill="#232d95" stroke="transparent" points="216.5,-111.74 216.5,-129.74 433.5,-129.74 433.5,-111.74 216.5,-111.74"></polygon>
+<polygon fill="none" stroke="white" points="216.5,-111.74 216.5,-129.74 433.5,-129.74 433.5,-111.74 216.5,-111.74"></polygon>
+<text text-anchor="start" x="219.5" y="-118.74" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">post_tags</text>
+<polygon fill="#404040" stroke="transparent" points="216.5,-93.74 216.5,-111.74 433.5,-111.74 433.5,-93.74 216.5,-93.74"></polygon>
+<polygon fill="none" stroke="white" points="216.5,-93.74 216.5,-111.74 433.5,-111.74 433.5,-93.74 216.5,-93.74"></polygon>
+<text text-anchor="start" x="219.5" y="-100.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="234.78" y="-100.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="241.78" y="-100.74" font-family="opensans" font-size="10.00" fill="white"> post_id INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="216.5,-75.74 216.5,-93.74 433.5,-93.74 433.5,-75.74 216.5,-75.74"></polygon>
+<polygon fill="none" stroke="white" points="216.5,-75.74 216.5,-93.74 433.5,-93.74 433.5,-75.74 216.5,-75.74"></polygon>
+<text text-anchor="start" x="219.5" y="-82.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="234.78" y="-82.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="241.78" y="-82.74" font-family="opensans" font-size="10.00" fill="white"> tag_id INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="216.5,-57.74 216.5,-75.74 433.5,-75.74 433.5,-57.74 216.5,-57.74"></polygon>
+<polygon fill="none" stroke="white" points="216.5,-57.74 216.5,-75.74 433.5,-75.74 433.5,-57.74 216.5,-57.74"></polygon>
+<text text-anchor="start" x="219.47" y="-63.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tag_additional_name VARCHAR(255) NULL</text>
+</g>
+<!-- post_tags&#45;&gt;posts -->
+<g id="edge5" class="edge" style="opacity: 1;">
+<title>post_tags:post_id-&gt;posts:post_id</title>
+<path fill="none" stroke="#5ea54a" d="M433,-102.74C499.83,-102.74 443.59,-186.92 469,-248.74 481.73,-279.71 476.21,-313.14 501.99,-319.62"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="501.67,-323.1 512,-320.74 502.45,-316.15 501.67,-323.1"></polygon>
+</g>
+<!-- post_tags&#45;&gt;tags -->
+<g id="edge4" class="edge" style="opacity: 1;">
+<title>post_tags:tag_id-&gt;tags:tag_id</title>
+<path fill="none" stroke="#5ea54a" d="M433,-84.74C472,-84.74 484.26,-84.74 518.67,-84.74"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="519,-88.24 529,-84.74 519,-81.24 519,-88.24"></polygon>
+</g>
+<!-- comments -->
+<g id="node6" class="node" style="opacity: 1;">
+<title>comments</title>
+<polygon fill="#232d95" stroke="transparent" points="234.5,-219.74 234.5,-237.74 414.5,-237.74 414.5,-219.74 234.5,-219.74"></polygon>
+<polygon fill="none" stroke="white" points="234.5,-219.74 234.5,-237.74 414.5,-237.74 414.5,-219.74 234.5,-219.74"></polygon>
+<text text-anchor="start" x="237.5" y="-226.74" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">comments</text>
+<polygon fill="#404040" stroke="transparent" points="234.5,-201.74 234.5,-219.74 414.5,-219.74 414.5,-201.74 234.5,-201.74"></polygon>
+<polygon fill="none" stroke="white" points="234.5,-201.74 234.5,-219.74 414.5,-219.74 414.5,-201.74 234.5,-201.74"></polygon>
+<text text-anchor="start" x="237.5" y="-208.74" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="252.78" y="-208.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="259.78" y="-208.74" font-family="opensans" font-size="10.00" fill="white"> comment_id INT</text>
+<polygon fill="#404040" stroke="transparent" points="234.5,-183.74 234.5,-201.74 414.5,-201.74 414.5,-183.74 234.5,-183.74"></polygon>
+<polygon fill="none" stroke="white" points="234.5,-183.74 234.5,-201.74 414.5,-201.74 414.5,-183.74 234.5,-183.74"></polygon>
+<text text-anchor="start" x="237.5" y="-190.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="252.78" y="-190.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="259.78" y="-190.74" font-family="opensans" font-size="10.00" fill="white"> post_id INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="234.5,-165.74 234.5,-183.74 414.5,-183.74 414.5,-165.74 234.5,-165.74"></polygon>
+<polygon fill="none" stroke="white" points="234.5,-165.74 234.5,-183.74 414.5,-183.74 414.5,-165.74 234.5,-165.74"></polygon>
+<text text-anchor="start" x="237.27" y="-172.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="252.55" y="-172.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="259.55" y="-172.74" font-family="opensans" font-size="10.00" fill="white"> user_id VARCHAR(36) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="234.5,-147.74 234.5,-165.74 414.5,-165.74 414.5,-147.74 234.5,-147.74"></polygon>
+<polygon fill="none" stroke="white" points="234.5,-147.74 234.5,-165.74 414.5,-165.74 414.5,-147.74 234.5,-147.74"></polygon>
+<text text-anchor="start" x="237.5" y="-153.74" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;body VARCHAR(255) NOT NULL</text>
+</g>
+<!-- comments&#45;&gt;users -->
+<g id="edge7" class="edge" style="opacity: 1;">
+<title>comments:user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M415.5,-174.74C440.32,-174.74 444.44,-162.33 469,-158.74 585.1,-141.75 627.25,-107.91 733,-158.74 752.3,-168.01 746.59,-193.22 759.16,-201.25"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="758.45,-204.68 769,-203.74 760.16,-197.89 758.45,-204.68"></polygon>
+</g>
+<!-- comments&#45;&gt;posts -->
+<g id="edge6" class="edge" style="opacity: 1;">
+<title>comments:post_id-&gt;posts:post_id</title>
+<path fill="none" stroke="#5ea54a" d="M415.5,-192.74C483.13,-192.74 445.12,-308.07 502.02,-319.78"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="501.71,-323.26 512,-320.74 502.38,-316.3 501.71,-323.26"></polygon>
+</g>
+<!-- comment_likes -->
+<g id="node7" class="node" style="opacity: 1;">
+<title>comment_likes</title>
+<polygon fill="#232d95" stroke="transparent" points="0,-137.74 0,-155.74 180,-155.74 180,-137.74 0,-137.74"></polygon>
+<polygon fill="none" stroke="white" points="0,-137.74 0,-155.74 180,-155.74 180,-137.74 0,-137.74"></polygon>
+<text text-anchor="start" x="3" y="-144.74" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">comment_likes</text>
+<polygon fill="#404040" stroke="transparent" points="0,-119.74 0,-137.74 180,-137.74 180,-119.74 0,-119.74"></polygon>
+<polygon fill="none" stroke="white" points="0,-119.74 0,-137.74 180,-137.74 180,-119.74 0,-119.74"></polygon>
+<text text-anchor="start" x="3" y="-126.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.28" y="-126.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.28" y="-126.74" font-family="opensans" font-size="10.00" fill="white"> comment_id INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0,-101.74 0,-119.74 180,-119.74 180,-101.74 0,-101.74"></polygon>
+<polygon fill="none" stroke="white" points="0,-101.74 0,-119.74 180,-119.74 180,-101.74 0,-101.74"></polygon>
+<text text-anchor="start" x="2.77" y="-108.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.05" y="-108.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.05" y="-108.74" font-family="opensans" font-size="10.00" fill="white"> user_id VARCHAR(36) NOT NULL</text>
+</g>
+<!-- comment_likes&#45;&gt;users -->
+<g id="edge9" class="edge" style="opacity: 1;">
+<title>comment_likes:user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M180,-110.74C211.86,-110.74 188.39,-64.63 216,-48.74 315.57,8.59 643.04,22.73 733,-48.74 785.35,-90.32 707.7,-191.79 758.79,-202.77"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="758.71,-206.28 769,-203.74 759.37,-199.31 758.71,-206.28"></polygon>
+</g>
+<!-- comment_likes&#45;&gt;comments -->
+<g id="edge8" class="edge" style="opacity: 1;">
+<title>comment_likes:comment_id-&gt;comments:comment_id</title>
+<path fill="none" stroke="#5ea54a" d="M180,-128.74C219.61,-128.74 195.39,-196.66 223.53,-208.87"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="223.03,-212.34 233.5,-210.74 224.31,-205.46 223.03,-212.34"></polygon>
+</g>
+<!-- post_likes -->
+<g id="node8" class="node" style="opacity: 1;">
+<title>post_likes</title>
+<polygon fill="#232d95" stroke="transparent" points="234.5,-365.74 234.5,-383.74 414.5,-383.74 414.5,-365.74 234.5,-365.74"></polygon>
+<polygon fill="none" stroke="white" points="234.5,-365.74 234.5,-383.74 414.5,-383.74 414.5,-365.74 234.5,-365.74"></polygon>
+<text text-anchor="start" x="237.5" y="-372.74" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">post_likes</text>
+<polygon fill="#404040" stroke="transparent" points="234.5,-347.74 234.5,-365.74 414.5,-365.74 414.5,-347.74 234.5,-347.74"></polygon>
+<polygon fill="none" stroke="white" points="234.5,-347.74 234.5,-365.74 414.5,-365.74 414.5,-347.74 234.5,-347.74"></polygon>
+<text text-anchor="start" x="237.5" y="-354.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="252.78" y="-354.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="259.78" y="-354.74" font-family="opensans" font-size="10.00" fill="white"> post_id INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="234.5,-329.74 234.5,-347.74 414.5,-347.74 414.5,-329.74 234.5,-329.74"></polygon>
+<polygon fill="none" stroke="white" points="234.5,-329.74 234.5,-347.74 414.5,-347.74 414.5,-329.74 234.5,-329.74"></polygon>
+<text text-anchor="start" x="237.27" y="-336.74" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="252.55" y="-336.74" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="259.55" y="-336.74" font-family="opensans" font-size="10.00" fill="white"> user_id VARCHAR(36) NOT NULL</text>
+</g>
+<!-- post_likes&#45;&gt;users -->
+<g id="edge11" class="edge" style="opacity: 1;">
+<title>post_likes:user_id-&gt;users:user_id</title>
+<path fill="none" stroke="#5ea54a" d="M415.5,-338.74C440.59,-338.74 444.24,-352.68 469,-356.74 584.79,-375.69 641.02,-429.58 733,-356.74 784.77,-315.73 708.41,-215.53 758.91,-204.69"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="759.37,-208.16 769,-203.74 758.71,-201.19 759.37,-208.16"></polygon>
+</g>
+<!-- post_likes&#45;&gt;posts -->
+<g id="edge10" class="edge" style="opacity: 1;">
+<title>post_likes:post_id-&gt;posts:post_id</title>
+<path fill="none" stroke="#5ea54a" d="M415.5,-356.74C457.7,-356.74 465.2,-326.14 501.98,-321.36"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="502.24,-324.85 512,-320.74 501.8,-317.86 502.24,-324.85"></polygon>
+</g>
+</g>
+</svg>
